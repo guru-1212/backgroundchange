@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        button{
+            
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 10px;
+            width: 70px;
+            font-weight: bold;
+            height: 50px;
+        }
+        #btn1{
+            background-color: red;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #btn2{
+            background-color: black;
+            color:white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #btn3{
+            background-color: green;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #btn4{
+            background-color: pink;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #btn5{
+            background-color: yellow;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #main{
+            width: 100%;
+        min-height: 100vh;
+        }
+        #main h1{
+            font-weight: bold;
+            
+        }
+        @media screen and (max-width:550px){
+            #main2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+            }
+            button{
+                height: 60px;
+                width: 70%;
+                margin-left: 10px;
+                margin-top: 20px;
+                
+            }
+            h1{
+                margin-right: 3px;
+            }
+        }
+    </style>
+</head>
+
+<body id="main" >
+    <div id="main2" >
+        <h1>Click button to change color</h1>
+    <button  onclick="redback()" id="btn1">red</button>
+    <button onclick="blackback()" id="btn2">black</button>
+    <button onclick="greenback()" id="btn3">green</button>
+    <button onclick="pinkback()" id="btn4">pink</button>
+    <button onclick="yellowback()" id="btn5">yellow</button>
+</div>
+
+
+
+    <script>
+        function redback(){
+            document.getElementById("main").style.backgroundColor="red";
+        }
+        function blackback(){
+            document.getElementById("main").style.backgroundColor="black";
+        }
+        function greenback(){
+            document.getElementById("main").style.backgroundColor="green";
+        }
+        function pinkback(){
+            document.getElementById("main").style.backgroundColor="pink";
+        }
+        function yellowback(){
+            document.getElementById("main").style.backgroundColor="yellow";
+        }
+        
+    </script>
+</body>
+
+</html>
